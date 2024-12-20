@@ -1,0 +1,10 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+button{
+  border-color: black;
+}
+text{
+  color: black;
+}
