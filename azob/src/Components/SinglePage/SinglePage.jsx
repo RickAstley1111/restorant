@@ -33,7 +33,7 @@ function SinglePage() {
 
       <div className='flex'>
         {
-          betDat.timeSlots.map((el) => <div className={el.available ? "m-[10px]  w-[100px] bg-green-400 rounded" : " rounded bg-gray-400 m-[10px]  w-[100px]"}><h5>{el.time}</h5> <h6>{el.available ? "available" : "not available"}</h6></div>)
+          betDat.timeSlots.map((el) => <div key={`${el.time}`} className={el.available ? "m-[10px]  w-[100px] bg-green-400 rounded" : " rounded bg-gray-400 m-[10px]  w-[100px]"}><h5>{el.time}</h5> <h6>{el.available ? "available" : "not available"}</h6></div>)
         }
       </div>
     </div>
