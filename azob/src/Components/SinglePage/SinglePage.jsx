@@ -7,7 +7,7 @@ function SinglePage() {
   const resdata = useLoaderData()
   const { Food } = useParams()
 
-  const betDat = resdata[Food]
+  const betDat = resdata[Food-1]
   return (
     <div>
       <Link to={"/"}>{"<- go back"}</Link>
